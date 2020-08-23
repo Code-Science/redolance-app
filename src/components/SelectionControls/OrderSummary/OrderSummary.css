@@ -1,0 +1,103 @@
+.ItemList{
+    background-color: rgba(207, 207, 199, 0.966);
+    max-height: 30vh;
+    overflow-y: auto;
+    width:100%;
+}
+.ItemList table{
+    width:100%;
+
+}
+.Text{
+    margin: 2rem auto;
+}
+.Order{
+    color :rgb(252, 251, 221);
+    font-size: 2.7rem;
+    padding-bottom: .5rem;
+    font-weight: 400;
+}
+
+.Text > *{
+    margin: 1.3rem 2rem;
+}
+
+.Image{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.Head{
+    border-bottom: 1px solid rgb(100, 100, 100);
+    background-color: rgb(252, 251, 221);
+    height: 30px;
+}
+.ItemNo{
+    width: 15%;
+    /* border-right: 1px solid rgb(100, 100, 100); */
+}
+.Items{
+    width: 30%;
+}
+.Buttons{
+    width: 20%;
+}
+.Name{
+    text-transform: capitalize;
+    /* transform: translateX(-4rem); */
+    width: 25%;
+}
+.Buttons button{
+     outline: none;
+     border: none;
+     padding: .5rem 1rem;
+     margin-right: .5rem;
+     font-size: 2.5rem;
+     color: rgb(36, 34, 34);
+     width: 4.5rem;
+     border-radius: 2px;
+}
+.Buttons button:hover{
+    background-color: rgba(189, 194, 194, 0.699);
+}
+@media (max-width:933px){
+    .Buttons button{
+        padding: .2rem .2rem;
+        font-size: 2rem;
+        width: 3rem;
+   }
+}
+@media (max-width:873px){
+    .Image{
+        width: 55px;
+        height: 55px;
+    }
+}
+@media (max-width:750px){
+    .Order{
+        font-size: 2.2rem;
+        padding-bottom: 0rem;
+
+    }
+    .Text{
+        margin: 1.5rem auto;
+    }
+    .Text > *{
+        margin: 1rem 2rem;
+    }
+}
+@media (max-width:557px){
+    .Head{
+        height: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:500px){
+    .ItemNo{
+        width: 10%;
+        /* border-right: 1px solid rgb(100, 100, 100); */
+    }
+}
+

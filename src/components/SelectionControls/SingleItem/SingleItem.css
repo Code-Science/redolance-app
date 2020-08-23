@@ -1,0 +1,69 @@
+.Card{
+    height: 30rem;
+    /* width: 15rem; */
+    perspective: 150rem;
+}
+
+.Front, .Back{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    backface-visibility: hidden;
+    transition: all .8s ease;
+}
+.Front{
+    border: 3px solid rgba(221, 218, 218, 0.267);
+    color: rgb(252, 251, 221);
+
+}
+
+.Back{
+    color: rgb(56, 52, 52);
+    background-image: linear-gradient(to right bottom, #be7c76, #b6483e);
+    transform: rotateY(180deg);
+    padding-top: 20%;
+    font-size: 2.5rem;
+
+}
+.Name{
+    color: rgb(252, 251, 221);
+}
+.Back > *{
+    margin-top: 5%;
+}
+
+.Back button{
+    outline:none;
+    border: none;
+    width: 7rem;
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    margin-left: .5rem;
+
+}
+.Back button:hover{
+    font-size: 1.35rem;
+    cursor: pointer;
+}
+
+.Card:hover .Front{
+    transform: rotateY(-180deg);
+}
+.Card:hover .Back{
+    transform: rotateY(10deg);
+}
+.Only{
+    font-size: 1.3rem;
+}
+
+/* @media (max-width: 900px){
+    .Front{
+        border: 3px solid rgba(241, 5, 5, 0.267);
+        color: rgb(252, 251, 221);
+    
+    }
+} */
+

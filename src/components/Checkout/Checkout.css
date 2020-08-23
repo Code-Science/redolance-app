@@ -1,0 +1,43 @@
+.Checkout h1{
+    color: #d68484;
+    text-shadow: none;
+    margin-top: 9rem;
+    margin-bottom: 5rem;
+
+}
+.Contact{
+    margin-bottom: 8rem;
+    margin-top: 3rem;
+}
+
+.Buttonn{
+    width:100%;
+    height: 30rem;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0rem 0px 8rem rgba(0,0,0,0.5);
+}
+.ButtonBox{
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.WarningMessage{
+    color: red;
+    font-size: 2rem;
+}
+.ErrorMessage{
+    color: white;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+@media(max-width:600px){
+    .ErrorMessage{
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,33 @@
+.SideDrawer{
+    position: fixed;
+    left: 0 ;
+    top:0;
+    width: 280px;
+    max-width: 65%;
+    height:100%;
+    z-index: 20000;
+    color: rgb(56, 52, 52);
+    background-image: linear-gradient(to right bottom, #be7c76, #b6483e);
+    transition: transform 0.36s ease-out;
+    display: block;
+}
+.Logo{
+    margin-top: 9rem;
+    margin-bottom: 5rem;
+    height: 9rem;
+}
+
+@media(min-width:800px){
+    .SideDrawer{
+        display: none;
+    }
+}
+
+.Open{
+    transform: translateX(60);
+}
+
+.Close{
+    transform: translateX(-200%);
+}
+

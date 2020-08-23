@@ -1,0 +1,59 @@
+.Input{
+   width: 40%;
+   margin: auto;
+   display: flex;
+   margin-top: 2rem;
+}
+
+.Element{
+  outline: none;
+  background-color: white;
+  display: block;
+  padding: 5px 10px;
+  width:100%;
+  font-size: 1.9rem;
+  border: 1px solid rgb(197, 196, 196);
+  color: rgb(68, 64, 64);
+}
+.Element:focus{
+    background-color: #ccc;
+}
+
+.Element::placeholder{
+    color: rgb(177, 173, 173);
+    font-size: 1.6rem;
+
+}
+.Red{
+    background-color: rgb(240, 216, 214);
+    border: 1px solid red;
+}
+.Red:focus{
+    /* background-color: rgb(243, 149, 138); */
+    border: 1px solid red;
+}
+.Input label{
+    display: inline-block;
+    width: 25%;
+    text-align: left;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem 0rem;
+}
+@media(max-width:900px){
+    .Input{
+        width: 55%;
+     }
+}
+
+@media(max-width:500px){
+    .Input{
+        width: 70%;
+    }
+    .Element{
+        font-size: 1.6rem;
+        padding: 3px 5px;
+
+      }
+}

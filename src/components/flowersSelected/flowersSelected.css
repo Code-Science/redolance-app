@@ -1,0 +1,53 @@
+.Selected{
+   background-color: rgb(26, 155, 43);
+   height: 6vh;
+   position: fixed;
+   bottom: 0vh;
+   left: 2.5rem;
+   width: calc(100% - 5rem);
+   z-index: 9000;
+   color: rgb(241, 215, 215);
+   font-weight: 400;
+   font-size: 2rem;
+   opacity: 0;
+   transform: translateY(10px);
+   transition: all .5s ease-in;
+
+
+}
+/* .Disappear{
+   animation-name: fade;
+   animation-fill-mode: backwards;
+   animation-duration: 4s;
+   animation-iteration-count: unset;
+}
+
+
+
+@keyframes fade {
+   0%{
+     opacity: 0;
+     transform: translateY(10px);
+   }
+   50%{
+      opacity: 1;
+      transform: translateY(0);
+
+   }
+   100%{
+      opacity: 0;
+      transform: translateY(10px);
+
+   }
+} */
+@media(max-width: 1200px){
+}
+
+@media(max-width: 900px){
+   
+}
+@media(max-width: 600px){
+   
+}
+@media(max-width: 400px){
+}

@@ -1,0 +1,97 @@
+.LogoBox{
+    height: 8rem;
+    position:absolute;
+    left: 2rem;
+    top: 1rem;
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 7rem;
+    text-shadow: 0rem .4rem .5rem rgba(0, 0, 0, 0.281);
+
+}
+.Main{
+    font-weight: 400;
+    letter-spacing: 3rem;
+    display: block;
+    font-size: 4rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.Sub{
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+    font-size: 1.8rem;
+    animation: moveInRight 1s ease-out;
+}
+.TextBox{
+    position: absolute;
+    top: 45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    text-align: center;
+}
+
+@keyframes moveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80%{
+        transform: translateX(1rem);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80%{
+        transform: translateX(-1rem);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 600px){
+    .Main{
+        letter-spacing: 1rem;
+        font-size: 5rem;
+    }
+    .Sub{
+        letter-spacing: .5rem;
+    }
+    .LogoBox{
+        height: 8rem;
+        left: 2rem;
+        top: 1rem;
+    }
+
+}
+

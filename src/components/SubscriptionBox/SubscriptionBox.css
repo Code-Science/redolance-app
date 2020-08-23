@@ -1,0 +1,211 @@
+.SubscriptionBox{
+    width: 75%;
+    height: 55rem;
+    margin: 5rem auto;
+    margin-top: 20rem;
+    position: relative;
+}
+
+.SubscriptionBox img{
+    height: 100%;
+    float: right;
+    box-shadow: 1rem 1rem 4rem rgba(0,0,0,0.3);
+}
+.SubscriptionBox div{
+    width: 85%;
+    height: 20rem;
+    /* background-image: linear-gradient(to right bottom, #be7676dc, #b63e3ed5); */
+    background-color: rgba(161, 161, 161, 0.753);
+    position: absolute;
+    top: 20rem;
+}
+/* #d69484 */
+.WarningText{
+    color: red;
+    margin-top: 15rem;
+
+}
+
+.SubscriptionBox label{
+    font-size: 2.5rem;
+    position: absolute;
+    left: 12rem;
+    top: 5rem;
+    color: black;
+}
+
+.SubscriptionBox label input{
+    height: 3.5rem;
+    width: 50rem;
+    outline: none;
+    transform: translateY(-7%);
+    border-radius: 3px;
+    border: none;
+    font-size: 2rem;
+    box-sizing: border-box;
+    color: gray;
+    padding-left: 1rem;
+
+}
+.SubscriptionBox label input:focus{
+    border: 1px solid rgb(125, 125, 128);
+}
+.SubscriptionBox label input::placeholder{
+    color: rgba(128, 128, 128, 0.507);
+}
+
+.SubscriptionBox aside{
+    position: absolute;
+    left: 35rem;
+    top: 13rem;
+}
+
+.SubscriptionBox p{
+    font-size: 2rem;
+    padding-top: 15rem;
+}
+
+.ErrorMessage{
+    color: white;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+@media (max-width: 1120px){
+    
+    .SubscriptionBox{
+        height: 50rem;
+    }
+}
+@media (max-width: 1080px){
+    .SubscriptionBox p{
+        font-size: 2rem;
+        padding-top: 12rem;
+    }
+}
+@media (max-width: 1000px){
+    .SubscriptionBox label{
+        font-size: 2.2rem;
+        left: 10rem;
+        top: 5rem;
+    }
+    .SubscriptionBox label input{
+        height: 3.3rem;
+        width: 40rem;
+        font-size: 1.8rem;
+    
+    }
+    .SubscriptionBox aside{
+        left: 28rem;
+        top: 11rem;
+    }
+    .SubscriptionBox{
+        height: 40rem;
+        margin: 3rem auto;
+        margin-top: 15rem;
+    }
+    .SubscriptionBox div{
+        width: 85%;
+        height: 18rem;
+        top: 15rem;
+    }
+    .SubscriptionBox p{
+        font-size: 1.9rem;
+        padding-top: 10rem;
+    }
+}
+@media (max-width: 966px){
+    .SubscriptionBox p{
+        font-size: 2rem;
+        padding-top: 7rem;
+    }
+}
+@media (max-width: 750px){
+    .SubscriptionBox label{
+        font-size: 2.1rem;
+        left: 7rem;
+    }
+    .SubscriptionBox aside{
+        left: 24rem;
+    }
+    .SubscriptionBox label input{
+        height: 3.2rem;
+        width: 35rem;
+        font-size: 1.8rem;
+    
+    }
+}
+@media (max-width: 650px){
+    .SubscriptionBox label{
+        font-size: 2rem;
+        left: 5rem;
+    }
+    .SubscriptionBox aside{
+        left: 20rem;
+    }
+    .SubscriptionBox label input{
+        height: 3.1rem;
+    
+    }
+}
+@media (max-width: 600px){
+    .SubscriptionBox{
+        margin: 0rem auto;
+        margin-top: 11rem;
+    } 
+    .ErrorMessage{
+        margin-bottom: 3rem;
+        font-size: 1.9rem;
+    } 
+}
+@media (max-width: 550px){
+    .SubscriptionBox label input{
+        height: 3.1rem;
+        width: 25rem;
+        font-size: 1.6rem;
+    
+    }
+    .SubscriptionBox p{
+        font-size: 1.8rem;
+        padding-top: 5rem;
+    }
+    .SubscriptionBox aside{
+        left: 15rem;
+    }
+}
+@media (max-width: 450px){
+    .SubscriptionBox label input{
+        height: 2.7rem;
+        width: 25rem;
+        font-size: 1.6rem;
+    
+    }
+    .SubscriptionBox p{
+        font-size: 1.6rem;
+        padding-top: 7rem;
+    }
+    .SubscriptionBox aside{
+        left: 12rem;
+    }
+    .SubscriptionBox label{
+        font-size: 1.7rem;
+        left: 4rem;
+    }
+    .SubscriptionBox{
+        height: 30rem;
+        width: 78%;
+    }
+    
+}
+@media (max-width: 450px){
+    
+    .SubscriptionBox{
+        width: 85%;
+
+    }
+    .SubscriptionBox label input{
+        width: 20rem;
+    
+    }
+    
+}
+

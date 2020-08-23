@@ -1,0 +1,108 @@
+.Button{
+    background-color:rgba(255, 255, 255, 0.925);
+    color: rgb(80, 79, 79);
+    min-width: 15rem;
+    font-weight: 700;
+    /* max-height: 5rem; */
+}
+.Button:link,
+.Button:visited{
+    text-transform: uppercase;
+    padding: .7rem 2.7rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    animation: moveInBottom .5s ease-out 0.75s ;
+    animation-fill-mode: backwards;
+}
+
+/* .Button{
+    background-color:rgba(255, 255, 255, 0.925);
+    color: rgb(59, 56, 56);
+    text-transform: uppercase;
+    padding: 1rem 3.2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    animation: moveInBottom .5s ease-out 0.75s ;
+    animation-fill-mode: backwards;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    min-width: 15rem;
+
+}
+.Button:disabled{
+    cursor: not-allowed;
+} */
+
+.Button:target{
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,0.4);
+
+}
+
+
+.Button:hover{
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.4);
+    background-color:rgba(255, 255, 255, 0.918);
+
+
+}
+/* .Button:active{
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,0.4);
+} */
+.Button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.404);
+    border-radius: 10rem;
+    transition: all .3s ease-out ;
+    opacity: 1;
+    outline: none;
+    border: none;
+}
+
+.Button:hover::after{
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:700px){
+    .Button{
+        min-width: 10rem;
+        font-size: 1.4rem;
+        /* max-height: 5rem; */
+    }
+}
+@media (max-width:560px){
+    .Button{
+        min-width: 10rem;
+        font-size: 1.2rem;
+    }
+    .Button:link,
+    .Button:visited{
+    padding: .5rem 2rem;
+}
+}

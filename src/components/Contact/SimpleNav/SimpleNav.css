@@ -1,0 +1,61 @@
+.SimpleNav{
+    background-image: linear-gradient(to bottom, #c9726f, #b6423e);
+    width:100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 40px; */
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.LogoBox{
+    height: 7rem;
+    margin-left: 5rem;
+    margin-right: 60rem;
+    margin-top: 1rem;
+
+}
+.MobileOnly{
+    display: none;
+}
+@media (max-width:1246px){
+    .LogoBox{
+        margin-left: 4rem;
+        margin-right: 50rem;
+    }
+}
+@media (max-width:1010px){
+    .LogoBox{
+        height: 7rem;
+        margin-left: 2rem;
+        margin-right: 40rem;
+    }
+}
+@media(max-width:49.9rem){
+    .SimpleNav{
+        justify-content: space-between;
+    }
+    .LogoBox{
+        margin-right: 10rem;
+    }
+    .MobileOnly{
+        display: block;
+        padding: .9rem 1.1rem;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-radius: 0px;
+        margin-right: 2rem;
+        color: white;
+        font-size: 2rem;
+    }
+    .SimpleNav ul{
+        display: none;
+    }
+    
+}
